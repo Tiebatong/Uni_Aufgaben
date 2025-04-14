@@ -3,7 +3,19 @@
 
 int main(void)
 {
-    printf("hello, world!\n");
+
+    int eingabe;
+    printf("1 für Rotfront, 0 für Klassnfeind\n");
+    scanf("%d",&eingabe);
+    
+    if (eingabe)
+    {
+        printf("Rotfront lieber genosse!\n");
+    }
+    else
+    {
+        printf("Klassenfeind erkannt\n");
+    }
     system("pause");
     return 0;
 }
