@@ -8,7 +8,6 @@ Fibonacci Folge:*/
 
 int main(void)
 {
-    printf("hello, world");
      double f1 = 1;
      double f2 = 1;
      double f3;
