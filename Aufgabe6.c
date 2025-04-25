@@ -1,21 +1,29 @@
+/*Berechnen Sie den Goldenen Schnitt indem Sie die Fibonacci-Folge bis n = 100 entwickeln. Ge-
+ben Sie die einzelnen Werte der berechneten Folge untereinander aus.
+Fibonacci Folge:*/
+
+
 #include <stdio.h>
 #include <stdlib.h>
 
 int main(void)
 {
+    printf("hello, world");
+     double f1 = 1;
+     double f2 = 1;
+     double f3;
+     float goldener_schnitt;
 
-    int eingabe;
-    printf("1 für Rotfront, 0 für Klassnfeind\n");
-    scanf("%d",&eingabe);
-    
-    if (eingabe)
+    for (int i = 0; i < 100; i++)
     {
-        printf("Rotfront lieber genosse!\n");
+        f3 = f1 + f2;
+        f1 = f2;
+        f2 = f3;
+        printf("%Lf\n", f3);
+        goldener_schnitt = f3 / f1;
     }
-    else
-    {
-        printf("Klassenfeind erkannt\n");
-    }
+    printf("goldener Schnitt: %.6f\n", goldener_schnitt);
+
     system("pause");
     return 0;
 }
